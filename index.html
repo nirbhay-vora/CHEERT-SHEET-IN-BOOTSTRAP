@@ -47,6 +47,7 @@
     <div class="container my-4" id="no_cards">
       <h2 class="my-3 text-center heading text-white w-50 m-auto pb-3">This cheat sheet is for you</h2>
       <div id="accordion">
+        <!-- card start  -->
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -58,49 +59,71 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 <pre class="language-java">
-  <code>
-    class HelloWorld {
-      public static void main(String[] args) {
-          int[] arr = {12,65,89,54,78,65,98};
-          
-          int largest = Integer.MIN_VALUE;
-          int secondLargest = Integer.MIN_VALUE;
-          
-          //using for each loop
-          for(int num : arr){
-              if(num > largest){
-              secondLargest = largest;
-                  largest = num;
-              }
-              else if(num < secondLargest && num != largest){
-                  secondLargest = num;
-              }
-          }
-
-          //Using traditional for loop
-          // for(int i=0;i<arr.length;i++){
-          //     if(arr[i] > largest)
-          //     {
-          //         secondLargest = largest;
-          //         largest = arr[i];
-          //     }
-          //     else if(arr[i] < secondLargest && arr[i] != largest){
-          //         secondLargest = arr[i];
-          //     }
-          // }
-          
-        System.out.println(secondLargest);
-      }
-  }
-  </code></pre>
+                    <code>
+                      class HelloWorld {
+                        public static void main(String[] args) {
+                            int[] arr = {12,65,89,54,78,65,98};
+                            
+                            int largest = Integer.MIN_VALUE;
+                            int secondLargest = Integer.MIN_VALUE;
+                            
+                            //using for each loop
+                            for(int num : arr){
+                                if(num > largest){
+                                    secondLargest = largest;
+                                    largest = num;
+                                }
+                                else if(num > secondLargest && num != largest){
+                                    secondLargest = num;
+                                }
+                             }
+                            
+                            System.out.println(secondLargest);
+                          }
+                        } 
+                      </code>
+                  </pre>
               </div>
             </div>
           </div>
-
-
         </div>
-  
-       
+        <!-- card end  -->
+
+        <!-- card start  -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                aria-controls="collapseOne">
+                Find second largest number using JavaScript
+              </button>
+            </h5>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <pre class="language-javascript">
+                    <code>
+                      let arr = [12,65,89,54,78,65,98]
+
+                      let largest = Number.NEGATIVE_INFINITY
+                      let secondLargest = Number.NEGATIVE_INFINITY
+
+                      for(let num of arr){
+                          if(num > largest){
+                              secondLargest = largest;
+                              largest = num;
+                          }
+                          else if(num > secondLargest && num != largest){
+                              secondLargest = num;
+                          }
+                      }
+                      console.log(secondLargest)
+                      </code>
+                  </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
       </div>
     </div>
   </div>
@@ -118,5 +141,4 @@
   <script src="script.js"></script>
 </body>
 
-</html> 
-
+</html>
