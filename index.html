@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Bootstrap Cheet sheet</title>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="prism.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cheet sheet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li> -->
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="myForm">
+          <input class="form-control mr-sm-2" id="myInput" type="search" onkeyup="searchData()" placeholder="Search"
+            aria-label="Search">
+          <!-- <button class="btn btn-search btn-outline-light  my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="container my-4" id="no_cards">
+      <h2 class="my-3 text-center heading text-white w-50 m-auto pb-3">This cheat sheet is for you</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Find second largest number using java
+              </button>
+            </h5>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <pre class="language-java">
+  <code>
+    class HelloWorld {
+      public static void main(String[] args) {
+          int[] arr = {12,65,89,54,78,65,98};
+          
+          int largest = Integer.MIN_VALUE;
+          int secondLargest = Integer.MIN_VALUE;
+          
+          //using for each loop
+          for(int num : arr){
+              if(num > largest){
+              secondLargest = largest;
+                  largest = num;
+              }
+              else if(num < secondLargest && num != largest){
+                  secondLargest = num;
+              }
+          }
+
+          //Using traditional for loop
+          // for(int i=0;i<arr.length;i++){
+          //     if(arr[i] > largest)
+          //     {
+          //         secondLargest = largest;
+          //         largest = arr[i];
+          //     }
+          //     else if(arr[i] < secondLargest && arr[i] != largest){
+          //         secondLargest = arr[i];
+          //     }
+          // }
+          
+        System.out.println(secondLargest);
+      }
+  }
+  </code></pre>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+  
+       
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html> 
+

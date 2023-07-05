@@ -1,0 +1,44 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.toolbar-item button{
+    cursor: pointer!important;
+    padding: 4px 8px!important;
+    border: 1px solid white!important;
+    border-radius: 10px!important;
+    color: white!important;
+}
+body{
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) !important; */
+    /* background-repeat: no-repeat; */
+    /* height: 100vh; */
+    min-height: 100vh;
+    background-color: black;
+}
+.navbar{
+    background-color: black;
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) !important; */
+}
+.navbar .btn{
+    color: white;
+    background-color: black;
+    /* background-image: linear-gradient(to right, #d16ba5, #b194e8, #6cbdff, #11e0ff, #5ffbf1)!important; */
+}
+
+@media only screen and (max-width: 991px) {
+   #myForm{
+        display: grid;
+        place-items: center;
+   }
+   #myInput{
+    width: 75%;
+   }
+   .btn-search{
+    width: 75%;
+   }
+  }
+@media only screen and (max-width: 540px) {
+   .heading{
+    font-size: 1.2rem;
+   }
+  }
